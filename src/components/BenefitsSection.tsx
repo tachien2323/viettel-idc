@@ -11,7 +11,6 @@ import {
   Sparkles,
   UserCheck,
   Users,
-  ArrowLeftRight,
   Download,
 } from "lucide-react";
 
@@ -52,17 +51,13 @@ export function BenefitsSection({
 
   const roomBoardG1 =
     targetAudience === "employee"
-      ? "25.000.000 ₫/ngày (Nhân viên)"
-      : targetAudience === "dependent"
-      ? "15.000.000 ₫/ngày (Người thân)"
-      : "NV: 25.000.000 ₫/ngày · Người thân: 15.000.000 ₫/ngày";
+      ? "25.000.000 ₫/ngày"
+      : "15.000.000 ₫/ngày";
 
   const roomBoardG1En =
     targetAudience === "employee"
-      ? "25,000,000 VND/day (Employee)"
-      : targetAudience === "dependent"
-      ? "15,000,000 VND/day (Dependent)"
-      : "Staff: 25,000,000 VND/day · Family: 15,000,000 VND/day";
+      ? "25,000,000 VND/day"
+      : "15,000,000 VND/day";
 
   const accidentLeaveG1 =
     targetAudience === "dependent"
@@ -190,14 +185,10 @@ export function BenefitsSection({
     {
       labelVi: "Viện phí & Tiền phòng đơn tiêu chuẩn (Tối đa 60 ngày/năm)",
       labelEn: "Room & Board — Standard Single Room (Max 60 days/year)",
-      subVi: "Điểm mới 2026–2027: Nhân viên Nhóm 1 tăng từ 15 triệu lên 25 triệu/ngày (Người thân Nhóm 1: 15 triệu/ngày)",
-      subEn: "2026–2027 Upgrade: Group 1 Employee increased to 25M/day (Group 1 Dependent: 15M/day)",
       g1: lang === "vi" ? roomBoardG1 : roomBoardG1En,
       g2: group2?.roomBoardEmployeeLimit || "7.500.000 ₫/ngày",
       g3: group3?.roomBoardEmployeeLimit || "5.250.000 ₫/ngày",
       highlight: true,
-      diffBadgeVi: "NV vs Người thân",
-      diffBadgeEn: "Staff vs Family",
     },
     {
       labelVi: "Phòng chăm sóc đặc biệt (ICU) (Không giới hạn số ngày nằm viện)",
@@ -273,23 +264,15 @@ export function BenefitsSection({
       g1:
         targetAudience === "employee"
           ? "Sinh đẻ: Chờ tỷ lệ 270 ngày · Biến chứng: Chờ tỷ lệ 60 ngày"
-          : targetAudience === "dependent"
-          ? "Sinh đẻ: Chờ đủ 270 ngày · Biến chứng: Chờ đủ 60 ngày"
-          : "NV: Chờ tỷ lệ 270/60 ngày · Người thân: Chờ đủ 270/60 ngày",
+          : "Sinh đẻ: Chờ đủ 270 ngày · Biến chứng: Chờ đủ 60 ngày",
       g2:
         targetAudience === "employee"
           ? "Sinh đẻ: Chờ tỷ lệ 270 ngày · Biến chứng: Chờ tỷ lệ 60 ngày"
-          : targetAudience === "dependent"
-          ? "Sinh đẻ: Chờ đủ 270 ngày · Biến chứng: Chờ đủ 60 ngày"
-          : "NV: Chờ tỷ lệ 270/60 ngày · Người thân: Chờ đủ 270/60 ngày",
+          : "Sinh đẻ: Chờ đủ 270 ngày · Biến chứng: Chờ đủ 60 ngày",
       g3:
         targetAudience === "employee"
           ? "Sinh đẻ: Chờ tỷ lệ 270 ngày · Biến chứng: Chờ tỷ lệ 60 ngày"
-          : targetAudience === "dependent"
-          ? "Sinh đẻ: Chờ đủ 270 ngày · Biến chứng: Chờ đủ 60 ngày"
-          : "NV: Chờ tỷ lệ 270/60 ngày · Người thân: Chờ đủ 270/60 ngày",
-      diffBadgeVi: "NV vs Người thân",
-      diffBadgeEn: "Staff vs Family",
+          : "Sinh đẻ: Chờ đủ 270 ngày · Biến chứng: Chờ đủ 60 ngày",
     },
     {
       labelVi: "Sinh thường (Hoặc điều trị biến chứng thai sản không phẫu thuật)",
@@ -438,19 +421,6 @@ export function BenefitsSection({
             <Users className="w-3.5 h-3.5 shrink-0" />
             <span>{t.audienceSwitcher.dependent}</span>
           </button>
-
-          <button
-            type="button"
-            onClick={() => onChangeAudience("compare")}
-            className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
-              targetAudience === "compare"
-                ? "bg-[#180F50] text-[#34C8D2] shadow-sm"
-                : "bg-white text-[#4A4766] border border-[#E6E8F0] hover:border-[#180F50]"
-            }`}
-          >
-            <ArrowLeftRight className="w-3.5 h-3.5 shrink-0" />
-            <span>{t.audienceSwitcher.compare}</span>
-          </button>
         </div>
       </div>
 
@@ -570,9 +540,7 @@ export function BenefitsSection({
                 <span>
                   {targetAudience === "employee"
                     ? t.audienceSwitcher.employeeBadge
-                    : targetAudience === "dependent"
-                    ? t.audienceSwitcher.dependentBadge
-                    : t.audienceSwitcher.compareBadge}
+                    : t.audienceSwitcher.dependentBadge}
                 </span>
               </div>
               <h3 id="plans-table-caption" className="text-xl sm:text-2xl font-extrabold text-[#180F50]">

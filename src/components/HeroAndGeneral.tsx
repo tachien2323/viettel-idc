@@ -13,7 +13,6 @@ import {
   Globe2,
   UserCheck,
   Users,
-  ArrowLeftRight,
   Sparkles,
   Clock,
   Download,
@@ -58,13 +57,25 @@ export function HeroAndGeneral({
             <span>{t.hero.badge}</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white max-w-4xl mx-auto text-balance">
-            {t.hero.title}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white max-w-4xl mx-auto">
+            {lang === "vi" ? (
+              <>
+                <span className="whitespace-nowrap">Cổng thông tin</span>{" "}
+                <span className="whitespace-nowrap">Bảo hiểm</span>
+                <br />
+                <span className="whitespace-nowrap">Sức khỏe</span> &amp;{" "}
+                <span className="whitespace-nowrap">Tai nạn</span>{" "}
+                <span className="whitespace-nowrap">Viettel IDC</span>
+              </>
+            ) : (
+              <>
+                <span className="whitespace-nowrap">Viettel IDC</span>{" "}
+                <span className="whitespace-nowrap">Health &amp; Accident</span>
+                <br />
+                <span className="whitespace-nowrap">Insurance Portal</span>
+              </>
+            )}
           </h1>
-
-          <p className="mt-5 text-base sm:text-lg text-[#E4E1F5] max-w-3xl mx-auto leading-relaxed text-balance">
-            {t.hero.subtitle}
-          </p>
 
           {/* Main Hero Action Buttons */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -139,19 +150,6 @@ export function HeroAndGeneral({
                   <Users className="w-4 h-4 shrink-0" />
                   <span>{t.audienceSwitcher.dependent}</span>
                 </button>
-
-                <button
-                  type="button"
-                  onClick={() => onChangeAudience("compare")}
-                  className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                    targetAudience === "compare"
-                      ? "bg-[#180F50] text-[#34C8D2] shadow-md"
-                      : "bg-[#F7F8FC] text-[#4A4766] hover:bg-[#EAF9FA] hover:text-[#180F50] border border-[#E6E8F0]"
-                  }`}
-                >
-                  <ArrowLeftRight className="w-4 h-4 shrink-0" />
-                  <span>{t.audienceSwitcher.compare}</span>
-                </button>
               </div>
             </div>
 
@@ -193,16 +191,12 @@ export function HeroAndGeneral({
             <span className="px-2.5 py-0.5 rounded-md bg-[#EAF9FA] text-[#180F50] font-bold text-xs whitespace-nowrap shrink-0 mt-0.5">
               {targetAudience === "employee"
                 ? t.audienceSwitcher.employeeBadge
-                : targetAudience === "dependent"
-                ? t.audienceSwitcher.dependentBadge
-                : t.audienceSwitcher.compareBadge}
+                : t.audienceSwitcher.dependentBadge}
             </span>
             <p className="leading-relaxed">
               {targetAudience === "employee"
                 ? t.audienceSwitcher.employeeDesc
-                : targetAudience === "dependent"
-                ? t.audienceSwitcher.dependentDesc
-                : t.audienceSwitcher.compareDesc}
+                : t.audienceSwitcher.dependentDesc}
             </p>
           </div>
         </div>
@@ -322,51 +316,25 @@ export function HeroAndGeneral({
             <table className="w-full text-left text-xs sm:text-sm border-collapse">
               <thead>
                 <tr className="bg-[#180F50] text-white">
-                  <th className="p-3.5 sm:p-4 font-bold w-1/4">
+                  <th className="p-3.5 sm:p-4 font-bold w-1/3">
                     {t.general.waitingCols.criteria}
                   </th>
-                  {(targetAudience === "employee" || targetAudience === "compare") && (
-                    <th className="p-3.5 sm:p-4 font-bold text-[#34C8D2]">
-                      {t.general.waitingCols.employee}
-                    </th>
-                  )}
-                  {(targetAudience === "dependent" || targetAudience === "compare") && (
-                    <th className="p-3.5 sm:p-4 font-bold text-[#34C8D2]">
-                      {t.general.waitingCols.dependent}
-                    </th>
-                  )}
+                  <th className="p-3.5 sm:p-4 font-bold text-[#34C8D2]">
+                    {targetAudience === "employee"
+                      ? t.general.waitingCols.employee
+                      : t.general.waitingCols.dependent}
+                  </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#E6E8F0]">
                 {t.general.waitingRows.map((row) => (
-                  <tr
-                    key={row.criteria}
-                    className={
-                      row.highlightDiff && targetAudience === "compare"
-                        ? "bg-[#EAF9FA]/40"
-                        : "bg-white"
-                    }
-                  >
+                  <tr key={row.criteria} className="bg-white">
                     <th className="p-3.5 sm:p-4 font-bold text-[#180F50] align-top">
-                      <div className="flex items-center gap-2">
-                        <span>{row.criteria}</span>
-                        {row.highlightDiff && targetAudience === "compare" ? (
-                          <span className="text-[10px] font-extrabold px-2 py-0.5 rounded bg-[#180F50] text-[#34C8D2] whitespace-nowrap">
-                            {lang === "vi" ? "Khác biệt" : "Differs"}
-                          </span>
-                        ) : null}
-                      </div>
+                      <span>{row.criteria}</span>
                     </th>
-                    {(targetAudience === "employee" || targetAudience === "compare") && (
-                      <td className="p-3.5 sm:p-4 text-[#4A4766] font-medium align-top leading-relaxed">
-                        {row.employee}
-                      </td>
-                    )}
-                    {(targetAudience === "dependent" || targetAudience === "compare") && (
-                      <td className="p-3.5 sm:p-4 text-[#4A4766] font-medium align-top leading-relaxed">
-                        {row.dependent}
-                      </td>
-                    )}
+                    <td className="p-3.5 sm:p-4 text-[#4A4766] font-medium align-top leading-relaxed">
+                      {targetAudience === "employee" ? row.employee : row.dependent}
+                    </td>
                   </tr>
                 ))}
               </tbody>

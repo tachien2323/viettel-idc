@@ -220,11 +220,10 @@ export function ChatbotWidget({
                 <Bot className="w-6 h-6" />
               </div>
               <div>
-                <div className="font-extrabold text-sm sm:text-base flex items-center gap-1.5">
+                <div className="font-extrabold text-sm sm:text-base flex items-center gap-1.5 whitespace-nowrap">
                   <span>{t.chatbot.headerTitle}</span>
-                  <Sparkles className="w-3.5 h-3.5 text-[#34C8D2]" />
+                  <Sparkles className="w-3.5 h-3.5 text-[#34C8D2] shrink-0" />
                 </div>
-                <div className="text-[11px] text-[#C9C4E8]">{t.chatbot.headerSub}</div>
               </div>
             </div>
 

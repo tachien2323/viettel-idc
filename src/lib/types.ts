@@ -1,5 +1,5 @@
 export type PlanCode = "1" | "2" | "3";
-export type TargetAudience = "employee" | "dependent" | "compare";
+export type TargetAudience = "employee" | "dependent";
 export type DocumentAudienceFilter = "all" | "employee" | "dependent" | "shared";
 export type DocumentCategoryFilter =
   | "all"
@@ -233,7 +233,7 @@ export const DEFAULT_PLANS: InsurancePlan[] = [
 export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   {
     id: "so-tay-nhan-vien",
-    titleVi: "Sổ tay Bảo hiểm Sức khỏe 2026–2027 — Dành cho NHÂN VIÊN",
+    titleVi: "Sổ\u00A0tay Bảo\u00A0hiểm Sức\u00A0khỏe 2026–2027 — Dành cho NHÂN\u00A0VIÊN",
     titleEn: "Health Insurance Handbook 2026–2027 — For EMPLOYEES",
     originalFileName: "SỔ TAY BHSK VIETTEL 2026 - NHÂN VIÊN.pdf",
     fileUrl: "/documents/so-tay-bhsk-viettel-2026-nhan-vien.pdf",
@@ -279,7 +279,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "so-tay-nguoi-than",
-    titleVi: "Sổ tay Bảo hiểm Sức khỏe 2026–2027 — Dành cho NGƯỜI THÂN",
+    titleVi: "Sổ\u00A0tay Bảo\u00A0hiểm Sức\u00A0khỏe 2026–2027 — Dành cho NGƯỜI\u00A0THÂN",
     titleEn: "Health Insurance Handbook 2026–2027 — For FAMILY DEPENDENTS",
     originalFileName: "SỔ TAY BHSK VIETTEL 2026 - NGƯỜI THÂN.pdf",
     fileUrl: "/documents/so-tay-bhsk-viettel-2026-nguoi-than.pdf",
@@ -325,7 +325,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "claim-form-tvta",
-    titleVi: "Giấy Yêu cầu Trả tiền Bảo hiểm (Claim Form Song ngữ Việt – Anh)",
+    titleVi: "Giấy Yêu\u00A0cầu Trả\u00A0tiền Bảo\u00A0hiểm (Claim\u00A0Form Song\u00A0ngữ Việt\u00A0–\u00A0Anh)",
     titleEn: "Insurance Claim Form (Bilingual Vietnamese – English)",
     originalFileName: "PJICO-Claimform-TVTA.doc",
     fileUrl: "/documents/PJICO-Claimform-TVTA.doc",
@@ -365,7 +365,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "bien-ban-tai-nan",
-    titleVi: "Biên bản Tai nạn (Mẫu BM.22.2-03 của PJICO)",
+    titleVi: "Biên\u00A0bản Tai\u00A0nạn (Mẫu BM.22.2-03 của PJICO)",
     titleEn: "Accident Report Form (PJICO Form BM.22.2-03)",
     originalFileName: "PJICO-BM.22.2-03-Bien-ban-tai-nan.doc",
     fileUrl: "/documents/pjico-bm-22-2-03-bien-ban-tai-nan.doc",
@@ -405,7 +405,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "danh-sach-bao-lanh",
-    titleVi: "Danh sách 530 Cơ sở Y tế Bảo lãnh Viện phí Toàn quốc (Papaya & PJICO)",
+    titleVi: "Danh\u00A0sách 530 Cơ\u00A0sở Y\u00A0tế Bảo\u00A0lãnh Viện\u00A0phí Toàn\u00A0quốc (Papaya\u00A0&\u00A0PJICO)",
     titleEn: "Direct Billing Hospital Network — 530 Facilities Nationwide",
     originalFileName: "DANH SÁCH CƠ SỞ Y TẾ BẢO LÃNH VIỆN PHÍ.pdf",
     fileUrl: "/documents/danh-sach-co-so-y-te-bao-lanh-vien-phi.pdf",
@@ -449,7 +449,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "blacklist-pjico",
-    titleVi: "Danh sách Cơ sở Y tế Loại trừ / Từ chối Bảo hiểm của PJICO (Blacklist)",
+    titleVi: "Danh\u00A0sách Cơ\u00A0sở Y\u00A0tế Loại\u00A0trừ / Từ\u00A0chối Bảo\u00A0hiểm của PJICO (Blacklist)",
     titleEn: "PJICO Blacklisted / Excluded Medical Facilities List",
     originalFileName: "Blacklist DANH SÁCH CÁC CƠ SỞ Y TẾ LOẠI TRỪ BẢO HIỂM CỦA PJICO.pdf",
     fileUrl: "/documents/blacklist-co-so-y-te-loai-tru-pjico.pdf",
@@ -491,7 +491,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "huong-dan-cai-dat-papaya",
-    titleVi: "Hướng dẫn Cài đặt & Đăng nhập Ứng dụng Papaya Care",
+    titleVi: "Hướng\u00A0dẫn Cài\u00A0đặt & Đăng\u00A0nhập Ứng\u00A0dụng Papaya\u00A0Care",
     titleEn: "Papaya Care App Installation & Login Guide",
     originalFileName: "Hướng dẫn cài đặt app Papaya.pdf",
     fileUrl: "/documents/huong-dan-cai-dat-app-papaya.pdf",
@@ -531,7 +531,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "huong-dan-su-dung-papaya",
-    titleVi: "Hướng dẫn Sử dụng Ứng dụng Papaya Care (Nộp Bồi thường Online < 10 triệu)",
+    titleVi: "Hướng\u00A0dẫn Sử\u00A0dụng Ứng\u00A0dụng Papaya\u00A0Care (Nộp Bồi\u00A0thường Online <\u00A010\u00A0triệu)",
     titleEn: "Papaya Care User Manual (Online Claim Submission < 10M VND)",
     originalFileName: "Hướng dẫn sử dụng app Papaya.pdf",
     fileUrl: "/documents/huong-dan-su-dung-app-papaya.pdf",
@@ -570,7 +570,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "quy-tac-384-suc-khoe",
-    titleVi: "Quy tắc Bảo hiểm Sức khỏe Toàn diện PJICO (Quyết định 384/2025/QĐ/TGĐ)",
+    titleVi: "Quy\u00A0tắc Bảo\u00A0hiểm Sức\u00A0khỏe Toàn\u00A0diện PJICO (Quyết\u00A0định 384/2025/QĐ/TGĐ)",
     titleEn: "PJICO Comprehensive Health Insurance Policy Rules (Decision 384/2025)",
     originalFileName: "PJICO-Quy-tac-384-Bao-hiem-suc-khoe.pdf",
     fileUrl: "/documents/PJICO-Quy-tac-384-Bao-hiem-suc-khoe.pdf",
@@ -609,7 +609,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "quy-tac-383-tai-nan",
-    titleVi: "Quy tắc Bảo hiểm Tai nạn Con người PJICO (Quyết định 383/2025/QĐ/TGĐ)",
+    titleVi: "Quy\u00A0tắc Bảo\u00A0hiểm Tai\u00A0nạn Con\u00A0người PJICO (Quyết\u00A0định 383/2025/QĐ/TGĐ)",
     titleEn: "PJICO Personal Accident Insurance Policy Rules (Decision 383/2025)",
     originalFileName: "PJICO - Quy-tac-383-Bao-hiem-tai-nan.pdf",
     fileUrl: "/documents/pjico-quy-tac-383-bao-hiem-tai-nan.pdf",
@@ -647,7 +647,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "loai-tru-bh-suc-khoe",
-    titleVi: "Điểm Loại trừ Bảo hiểm Sức khỏe (Trích Chương III Quy tắc 384 PJICO)",
+    titleVi: "Điểm Loại\u00A0trừ Bảo\u00A0hiểm Sức\u00A0khỏe (Trích Chương\u00A0III Quy\u00A0tắc\u00A0384 PJICO)",
     titleEn: "Health Insurance Exclusions (Chapter III of PJICO Rule 384)",
     originalFileName: "Loại trừ BH Sức khỏe.pdf",
     fileUrl: "/documents/loai-tru-bh-suc-khoe.pdf",
@@ -683,7 +683,7 @@ export const VIETTEL_DOCUMENTS: PortalDocumentItem[] = [
   },
   {
     id: "loai-tru-bh-tai-nan",
-    titleVi: "Điểm Loại trừ Bảo hiểm Tai nạn (Trích Chương III Quy tắc 383 PJICO)",
+    titleVi: "Điểm Loại\u00A0trừ Bảo\u00A0hiểm Tai\u00A0nạn (Trích Chương\u00A0III Quy\u00A0tắc\u00A0383 PJICO)",
     titleEn: "Personal Accident Insurance Exclusions (Chapter III of PJICO Rule 383)",
     originalFileName: "Loại trừ BH Tai nạn.pdf",
     fileUrl: "/documents/loai-tru-bh-tai-nan.pdf",

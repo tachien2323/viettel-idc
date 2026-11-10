@@ -350,11 +350,25 @@ export function ClaimsNotesContact({
           <span className="text-xs font-bold uppercase tracking-wider text-[#1FA3AD]">
             {t.notes.sectionTag}
           </span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#180F50] mt-1 text-balance">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#180F50] mt-1">
             {t.notes.title}
           </h2>
-          <p className="text-[#4A4766] mt-2 text-base text-balance">
-            {t.notes.subtitle}
+          <p className="text-[#4A4766] mt-2 text-base leading-relaxed">
+            {lang === "vi" ? (
+              <>
+                Nắm vững các <span className="whitespace-nowrap">quy định</span> dưới đây giúp{" "}
+                <span className="whitespace-nowrap">Cán bộ nhân viên</span> và{" "}
+                <span className="whitespace-nowrap">Người thân</span>{" "}
+                <span className="whitespace-nowrap">Viettel IDC</span>
+                <br />
+                tránh bị <span className="whitespace-nowrap">từ chối</span> hoặc{" "}
+                <span className="whitespace-nowrap">yêu cầu</span>{" "}
+                <span className="whitespace-nowrap">bổ sung</span>{" "}
+                <span className="whitespace-nowrap">chứng từ:</span>
+              </>
+            ) : (
+              t.notes.subtitle
+            )}
           </p>
         </div>
 
@@ -627,12 +641,9 @@ export function ClaimsNotesContact({
 
           {/* Bottom AI Advisor Prompt Chips CTA */}
           <div className="mt-14 bg-[#EAF9FA] rounded-3xl border border-[#34C8D2]/30 p-8 sm:p-10 text-center max-w-4xl mx-auto">
-            <h3 className="text-xl sm:text-2xl font-extrabold text-[#180F50] text-balance">
+            <h3 className="text-xl sm:text-2xl font-extrabold text-[#180F50]">
               {t.contact.ctaTitle}
             </h3>
-            <p className="text-sm sm:text-base text-[#4A4766] mt-2 max-w-2xl mx-auto text-balance">
-              {t.contact.ctaDesc}
-            </p>
 
             {/* Suggested Question Chips */}
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5">

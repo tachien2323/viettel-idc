@@ -100,6 +100,7 @@ export function DocumentCenterSection({ targetAudience }: DocumentCenterSectionP
           ...doc.keywords,
         ]
           .join(" ")
+          .replace(/\u00A0/g, " ")
           .toLowerCase();
 
         const tokens = q.split(/\s+/);
@@ -409,9 +410,6 @@ export function DocumentCenterSection({ targetAudience }: DocumentCenterSectionP
                           >
                             {lang === "vi" ? doc.audienceLabelVi : doc.audienceLabelEn}
                           </span>
-                          <div className="text-[11px] text-[#4A4766] font-medium mt-0.5">
-                            {lang === "vi" ? doc.pagesOrTypeVi : doc.pagesOrTypeEn}
-                          </div>
                         </div>
                       </div>
 
@@ -428,13 +426,10 @@ export function DocumentCenterSection({ targetAudience }: DocumentCenterSectionP
                       </span>
                     </div>
 
-                    {/* Title & Original Filename */}
+                    {/* Title */}
                     <h3 className="font-extrabold text-base sm:text-lg text-[#180F50] leading-snug">
                       {lang === "vi" ? doc.titleVi : doc.titleEn}
                     </h3>
-                    <div className="mt-1 text-[11px] font-mono text-[#1FA3AD] bg-[#F7F8FC] px-2.5 py-1 rounded-md border border-[#E6E8F0] truncate">
-                      📄 {doc.originalFileName}
-                    </div>
 
                     {/* Summary */}
                     <p className="mt-3 text-xs sm:text-sm text-[#4A4766] leading-relaxed">

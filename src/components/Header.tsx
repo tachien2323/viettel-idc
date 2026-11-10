@@ -11,7 +11,6 @@ import {
   X,
   UserCheck,
   Users,
-  ArrowLeftRight,
 } from "lucide-react";
 
 interface HeaderProps {
@@ -102,18 +101,6 @@ export function Header({ targetAudience, onChangeAudience }: HeaderProps) {
               <Users className="w-3.5 h-3.5 shrink-0" />
               <span>{lang === "vi" ? "Người thân" : "Family"}</span>
             </button>
-            <button
-              type="button"
-              onClick={() => onChangeAudience("compare")}
-              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
-                targetAudience === "compare"
-                  ? "bg-[#34C8D2] text-[#180F50] shadow-xs"
-                  : "text-[#E4E1F5] hover:text-white"
-              }`}
-            >
-              <ArrowLeftRight className="w-3.5 h-3.5 shrink-0" />
-              <span>{lang === "vi" ? "So sánh" : "Compare"}</span>
-            </button>
           </div>
 
           <a
@@ -173,7 +160,7 @@ export function Header({ targetAudience, onChangeAudience }: HeaderProps) {
       {mobileMenuOpen ? (
         <div className="xl:hidden bg-[#180F50] border-t border-white/10 px-4 pt-3 pb-5 space-y-3 shadow-2xl">
           {/* Mobile Audience Switcher */}
-          <div className="grid grid-cols-3 gap-1.5 bg-[#261B6E] p-1.5 rounded-xl border border-white/15">
+          <div className="grid grid-cols-2 gap-1.5 bg-[#261B6E] p-1.5 rounded-xl border border-white/15">
             <button
               type="button"
               onClick={() => {
@@ -201,20 +188,6 @@ export function Header({ targetAudience, onChangeAudience }: HeaderProps) {
               }`}
             >
               {lang === "vi" ? "Người thân" : "Dependents"}
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                onChangeAudience("compare");
-                setMobileMenuOpen(false);
-              }}
-              className={`py-2 px-2 rounded-lg text-xs font-bold text-center whitespace-nowrap ${
-                targetAudience === "compare"
-                  ? "bg-[#34C8D2] text-[#180F50]"
-                  : "text-[#E4E1F5]"
-              }`}
-            >
-              {lang === "vi" ? "So sánh" : "Compare"}
             </button>
           </div>
 

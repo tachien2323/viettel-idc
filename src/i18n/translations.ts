@@ -44,7 +44,7 @@ export const translations = {
     },
     general: {
       sectionTag: "I · Thông tin chung & Điểm mới 2026 – 2027",
-      title: "Hợp đồng Bảo hiểm Sức khỏe & Tai nạn Viettel IDC",
+      title: "Hợp\u00A0đồng Bảo\u00A0hiểm Sức\u00A0khỏe & Tai\u00A0nạn Viettel\u00A0IDC",
       policyBadge: "PJICO · PAPAYA · BOLTTECH",
       items: [
         {
@@ -104,9 +104,9 @@ export const translations = {
           desc: "Mở rộng chi trả vật tư/thiết bị y tế sử dụng tại CSYT trong khám ngoại trú: Nhóm 3 tối đa 1.000.000đ/năm; Nhóm 2 tối đa 2.000.000đ/năm; Nhóm 1 tối đa 3.000.000đ/năm.",
         },
       ],
-      waitingTitle: "Điều kiện Tham gia & Quy định Thời gian chờ (Nhân viên vs Người thân)",
+      waitingTitle: "Điều\u00A0kiện Tham\u00A0gia & Quy\u00A0định Thời\u00A0gian\u00A0chờ",
       waitingSubtitle:
-        "Lưu ý: Người đã tham gia liên tục đủ 01 năm từ Hợp đồng 2025–2026 được MIỄN thời gian chờ cho quyền lợi tái tục tương đương.",
+        "Lưu\u00A0ý: Người đã tham\u00A0gia liên\u00A0tục đủ 01\u00A0năm từ Hợp\u00A0đồng 2025–2026 được MIỄN thời\u00A0gian\u00A0chờ cho quyền\u00A0lợi tái\u00A0tục tương\u00A0đương.",
       waitingCols: {
         criteria: "Hạng mục quy định",
         employee: "Chương trình NHÂN VIÊN (CBNV)",
@@ -162,9 +162,9 @@ export const translations = {
     },
     benefits: {
       sectionTag: "II · BẢNG QUYỀN LỢI BẢO HIỂM CHI TIẾT",
-      title: "Quyền lợi Bảo hiểm theo 3 Nhóm Chức danh & 15 Mở rộng",
+      title: "Quyền\u00A0lợi Bảo\u00A0hiểm theo 3\u00A0Nhóm Chức\u00A0danh & 15\u00A0Mở\u00A0rộng",
       subtitle:
-        "Chọn đối tượng (Nhân viên / Người thân / So sánh) để tra cứu chính xác hạn mức chi trả của Nhóm 1, Nhóm 2 và Nhóm 3.",
+        "Chọn đối\u00A0tượng (Nhân\u00A0viên / Người\u00A0thân) để tra\u00A0cứu chính\u00A0xác hạn\u00A0mức chi\u00A0trả của Nhóm\u00A01, Nhóm\u00A02 và Nhóm\u00A03.",
       colBenefit: "Hạng mục quyền lợi bảo hiểm",
       tabs: {
         overview: "Tổng quan & Tai nạn",
@@ -273,9 +273,9 @@ export const translations = {
     },
     documents: {
       sectionTag: "III · TRUNG TÂM TÀI LIỆU & BIỂU MẪU (12 FILES GỐC)",
-      title: "Tra cứu & Tải Tài liệu theo Đối tượng và Chủ đề",
+      title: "Tra\u00A0cứu & Tải Tài\u00A0liệu theo Đối\u00A0tượng và Chủ\u00A0đề",
       subtitle:
-        "Chọn đúng đối tượng (Nhân viên / Người thân / Tài liệu chung) hoặc gõ từ khóa để tìm và tải ngay file PDF / Word gốc từ bộ hồ sơ hợp đồng Viettel IDC.",
+        "Chọn đúng đối\u00A0tượng (Nhân\u00A0viên / Người\u00A0thân / Tài\u00A0liệu\u00A0chung) hoặc gõ từ\u00A0khóa để tìm và tải file",
       searchPlaceholder:
         "Tìm tài liệu: ví dụ 'sổ tay người thân', 'claim form', 'tai nạn', 'bảo lãnh', 'blacklist', 'papaya'...",
       audienceFilterLabel: "Đối tượng áp dụng:",
@@ -301,9 +301,9 @@ export const translations = {
     },
     claims: {
       sectionTag: "IV · HƯỚNG DẪN BẢO LÃNH & BỒI THƯỜNG",
-      title: "Quy trình Bảo lãnh viện phí & Nộp hồ sơ Bồi thường",
+      title: "Quy\u00A0trình Bảo\u00A0lãnh viện\u00A0phí & Nộp hồ\u00A0sơ Bồi\u00A0thường",
       subtitle:
-        "Linh hoạt sử dụng Bảo lãnh viện phí trực tiếp tại 530 CSYT, nộp online qua App Papaya Care (< 10 triệu VNĐ) hoặc gửi hồ sơ bản cứng về Bolttech Việt Nam.",
+        "Linh\u00A0hoạt sử\u00A0dụng Bảo\u00A0lãnh viện\u00A0phí trực\u00A0tiếp tại 530\u00A0CSYT, nộp online qua App Papaya\u00A0Care (<\u00A010\u00A0triệu\u00A0VNĐ) hoặc gửi hồ\u00A0sơ bản\u00A0cứng về Bolttech Việt\u00A0Nam.",
       tabProcess: "Sơ đồ Quy trình Bồi thường",
       tabDocs: "Danh mục Chứng từ Cần thiết",
       clickToZoom: "Phóng to sơ đồ",
@@ -381,27 +381,27 @@ export const translations = {
           type: "PDF",
         },
       ],
-      formsTitle: "Biểu mẫu Bồi thường & Quy tắc PJICO cần tải",
-      formsSubtitle: "Tải trực tiếp các biểu mẫu Word (.doc) và Quy tắc bảo hiểm gốc trong thư mục dự án:",
+      formsTitle: "Biểu\u00A0mẫu Bồi\u00A0thường & Quy\u00A0tắc PJICO cần\u00A0tải",
+      formsSubtitle: "Tải trực tiếp các biểu mẫu Word (.doc)",
       formsLinks: [
         {
-          title: "Giấy yêu cầu trả tiền bảo hiểm (Claim Form)",
+          title: "Giấy yêu\u00A0cầu trả\u00A0tiền bảo\u00A0hiểm (Claim\u00A0Form)",
           subBadge: "Song ngữ Việt – Anh",
-          desc: "Mẫu đơn chuẩn của PJICO dùng khi gửi hồ sơ bồi thường bản cứng.",
+          desc: "Mẫu đơn chuẩn của PJICO dùng khi gửi hồ\u00A0sơ bồi\u00A0thường bản\u00A0cứng.",
           url: "/documents/PJICO-Claimform-TVTA.doc",
           type: "DOC",
         },
         {
-          title: "Biên bản tai nạn (Mẫu BM.22.2-03)",
+          title: "Biên\u00A0bản tai\u00A0nạn (Mẫu BM.22.2-03)",
           subBadge: "Bắt buộc khi Tai nạn",
-          desc: "Bắt buộc bổ sung khi yêu cầu bồi thường chi phí y tế hoặc nghỉ điều trị do tai nạn.",
+          desc: "Bắt\u00A0buộc bổ\u00A0sung khi yêu\u00A0cầu bồi\u00A0thường chi\u00A0phí y\u00A0tế hoặc nghỉ điều\u00A0trị do tai\u00A0nạn.",
           url: "/documents/pjico-bm-22-2-03-bien-ban-tai-nan.doc",
           type: "DOC",
         },
         {
-          title: "Trích lục 22 Điểm Loại trừ BH Sức khỏe & 24 Điểm Loại trừ BH Tai nạn",
+          title: "Trích\u00A0lục 22\u00A0Điểm Loại\u00A0trừ BH\u00A0Sức\u00A0khỏe & 24\u00A0Điểm Loại\u00A0trừ BH\u00A0Tai\u00A0nạn",
           subBadge: "Chương III Quy tắc 383 & 384",
-          desc: "Tóm tắt các trường hợp không thuộc phạm vi bảo hiểm của PJICO.",
+          desc: "Tóm\u00A0tắt các trường\u00A0hợp không thuộc phạm\u00A0vi bảo\u00A0hiểm của PJICO.",
           url: "/documents/loai-tru-bh-suc-khoe.pdf",
           type: "PDF",
         },
@@ -415,9 +415,9 @@ export const translations = {
     },
     notes: {
       sectionTag: "V · LƯU Ý QUAN TRỌNG & ĐIỀU KHOẢN LOẠI TRỪ",
-      title: "10 Lưu ý Thiết yếu để Hồ sơ Được Chi trả Tối đa",
+      title: "10\u00A0Lưu\u00A0ý Thiết\u00A0yếu để Hồ\u00A0sơ Được Chi\u00A0trả Tối\u00A0đa",
       subtitle:
-        "Nắm vững các quy định dưới đây giúp Cán bộ nhân viên và Người thân Viettel IDC tránh bị từ chối hoặc yêu cầu bổ sung chứng từ:",
+        "Nắm vững các quy\u00A0định dưới đây giúp Cán\u00A0bộ nhân\u00A0viên và Người\u00A0thân Viettel\u00A0IDC tránh bị từ\u00A0chối hoặc yêu\u00A0cầu bổ\u00A0sung chứng\u00A0từ:",
       blacklistUrl: "/documents/blacklist-co-so-y-te-loai-tru-pjico.pdf",
       items: [
         {
@@ -482,11 +482,10 @@ export const translations = {
         "Phòng 3, Tầng 11, Tòa nhà HAREC, Số 4A Láng Hạ, Phường Giảng Võ (Quận Ba Đình), Hà Nội",
       hcmAddress:
         "Tầng 3, Tòa nhà An Khánh, Số 63 Phạm Ngọc Thạch, Phường Xuân Hòa, TP. Hồ Chí Minh",
-      ctaTitle: "Cần tra cứu nhanh? Hỏi Trợ lý AI Viettel IDC ngay!",
-      ctaDesc:
-        "Trợ lý AI đã được nạp toàn bộ 12 tài liệu hợp đồng Viettel IDC (Sổ tay Nhân viên, Sổ tay Người thân, 530 CSYT bảo lãnh, Blacklist PJICO, Quy tắc 383 & 384, App Papaya). Nhấn vào câu hỏi gợi ý bên dưới để thử ngay:",
+      ctaTitle: "Cần tra\u00A0cứu nhanh? Hỏi trợ\u00A0lý AI ngay",
+      ctaDesc: "",
       suggestedQuestions: [
-        "So sánh điểm khác nhau giữa chương trình Nhân viên và Người thân?",
+        "Quyền lợi Nội trú & Tiền phòng Nhóm 1, 2, 3 được chi trả thế nào?",
         "Quyền lợi Ngoại trú & Nha khoa Nhóm 1, 2, 3 được chi trả thế nào?",
         "Hồ sơ dưới 10 triệu nộp qua App Papaya Care cần giấy tờ gì?",
         "Quyền lợi Thai sản sinh thường, sinh mổ và trợ cấp viện công?",
@@ -497,8 +496,8 @@ export const translations = {
       hotlinePrefix: "Hotline TPA Papaya (Bảo lãnh & App):",
     },
     chatbot: {
-      headerTitle: "Trợ lý Bảo hiểm Viettel IDC AI",
-      headerSub: "Đã nạp 12 tài liệu Nhân viên & Người thân (2026–2027)",
+      headerTitle: "Trợ lý AI",
+      headerSub: "",
       welcomeMsg:
         "Xin chào! Tôi là **Trợ lý AI của Bolttech Việt Nam** phụ trách chương trình bảo hiểm **Viettel IDC (01/10/2026 – 30/09/2027)**.\n\nTôi đã được nạp toàn bộ **12 tài liệu gốc** của chương trình:\n- Quyền lợi **Nhân viên** & **Người thân** (Nhóm 1, Nhóm 2, Nhóm 3)\n- **15 Quyền lợi mở rộng** & **6 điểm mới 2026–2027**\n- Hướng dẫn **App Papaya Care** (< 10 triệu) & Hồ sơ bản cứng\n- Tra cứu **530 CSYT bảo lãnh** & **Blacklist PJICO**\n- Cung cấp link tải trực tiếp Sổ tay, Claim Form, Biên bản tai nạn",
       inputPlaceholder: "Hỏi quyền lợi NV/Người thân, viện bảo lãnh, tải biểu mẫu...",
@@ -616,7 +615,7 @@ export const translations = {
           desc: "Expanded outpatient medical supplies limit: Group 3 up to 1,000,000 VND/yr; Group 2 up to 2,000,000 VND/yr; Group 1 up to 3,000,000 VND/yr.",
         },
       ],
-      waitingTitle: "Eligibility & Waiting Periods (Employees vs. Family Dependents)",
+      waitingTitle: "Eligibility & Waiting Periods",
       waitingSubtitle:
         "Note: Members continuously insured for a full year under the 2025–2026 policy have their waiting periods WAIVED for renewed equivalent benefits.",
       waitingCols: {
@@ -676,7 +675,7 @@ export const translations = {
       sectionTag: "II · DETAILED BENEFIT SCHEDULES",
       title: "Coverage by 3 Job Grades & 15 Special Extensions",
       subtitle:
-        "Switch between Employee, Family Dependent, or Comparison view to inspect exact limits across Group 1, Group 2, and Group 3.",
+        "Switch between Employee and Family Dependent view to inspect exact limits across Group 1, Group 2, and Group 3.",
       colBenefit: "Benefit Category",
       tabs: {
         overview: "Overview & Accident",
@@ -787,7 +786,7 @@ export const translations = {
       sectionTag: "III · DOCUMENT & FORM CENTER (ALL 12 OFFICIAL FILES)",
       title: "Smart Document Search by Target Audience & Category",
       subtitle:
-        "Filter by target audience (Employee / Dependent / Shared) or type any keyword to preview and download the original PDF and Word (.doc) files.",
+        "Select the target audience (Employee / Dependent / Shared) or type a keyword to find and download files",
       searchPlaceholder:
         "Search documents: e.g. 'dependent handbook', 'claim form', 'accident', 'direct billing', 'blacklist', 'papaya'...",
       audienceFilterLabel: "Target Audience:",
@@ -894,7 +893,7 @@ export const translations = {
         },
       ],
       formsTitle: "Downloadable Claim Forms & PJICO Policy Rules",
-      formsSubtitle: "Direct download links to official Word (.doc) forms and PJICO rules:",
+      formsSubtitle: "Direct download for Word (.doc) forms",
       formsLinks: [
         {
           title: "PJICO Health Insurance Claim Form",
@@ -994,11 +993,10 @@ export const translations = {
         "Room 3, 11th Floor, HAREC Building, 4A Lang Ha, Giang Vo Ward (Ba Dinh), Hanoi",
       hcmAddress:
         "3rd Floor, An Khanh Building, 63 Pham Ngoc Thach, Xuan Hoa Ward, Ho Chi Minh City",
-      ctaTitle: "Need instant answers? Ask the Viettel IDC AI Advisor!",
-      ctaDesc:
-        "Our AI Advisor is loaded with all 12 official Viettel IDC policy documents (Employee Handbook, Dependent Handbook, 530 Direct Billing Hospitals, PJICO Blacklist, Rules 383 & 384, Papaya App Guides). Click a question below:",
+      ctaTitle: "Need quick answers? Ask the AI Assistant now",
+      ctaDesc: "",
       suggestedQuestions: [
-        "What are the differences between Employee and Dependent coverage?",
+        "What are the Inpatient & Room limits for Groups 1, 2, and 3?",
         "How much is covered for Outpatient & Dental under Groups 1, 2, 3?",
         "How do I submit a claim under 10M VND on the Papaya Care app?",
         "What are the Maternity limits for normal delivery and C-section?",
@@ -1009,8 +1007,8 @@ export const translations = {
       hotlinePrefix: "Papaya TPA Hotline (Direct Billing & App):",
     },
     chatbot: {
-      headerTitle: "Viettel IDC AI Insurance Advisor",
-      headerSub: "Loaded with all 12 Employee & Dependent Docs (2026–2027)",
+      headerTitle: "AI Assistant",
+      headerSub: "",
       welcomeMsg:
         "Hello! I am the **Bolttech Vietnam AI Advisor** for **Viettel IDC (01/10/2026 – 30/09/2027)**.\n\nI have full access to all **12 official policy documents**:\n- **Employee** & **Family Dependent** benefits (Groups 1, 2, 3)\n- **15 Special Extensions** & **2026–2027 Upgrades**\n- **Papaya Care App** (< 10M VND) & hard-copy claim guides\n- **530 Direct Billing Hospitals** & **PJICO Blacklist**\n- Direct download links for Handbooks, Claim Form & Accident Report",
       inputPlaceholder: "Ask about Employee/Dependent benefits, hospitals, forms...",
