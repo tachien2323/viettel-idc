@@ -298,11 +298,6 @@ export function ChatbotWidget({
                   </div>
                   <div className="bg-white border border-[#E6E8F0] rounded-2xl rounded-tl-xs p-3.5 text-xs sm:text-sm text-[#4A4766] max-w-[85%] shadow-2xs leading-relaxed">
                     {renderSimpleMarkdown(m.content)}
-                    {m.modelUsed ? (
-                      <div className="mt-2 pt-1.5 border-t border-[#E6E8F0] text-[10px] text-[#4A4766]/70 flex items-center justify-between">
-                        <span>AI Model: {m.modelUsed}</span>
-                      </div>
-                    ) : null}
                   </div>
                 </div>
               )
