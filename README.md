@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cổng thông tin Bảo hiểm Sức khỏe & Tai nạn Viettel IDC (2026 – 2027)
 
-## Getting Started
+Cổng thông tin dịch vụ bảo hiểm doanh nghiệp chuẩn thương hiệu **Bolttech Việt Nam** dành cho **Cán bộ nhân viên (CBNV)** và **Người thân** của **Viettel IDC** (Thời hạn bảo hiểm: `01/10/2026 – 30/09/2027` · Bảo hiểm gốc: **PJICO** · TPA giải quyết bồi thường: **Papaya Insurtech**).
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tính năng nổi bật
+- **Chuyển đổi linh hoạt theo Đối tượng (`CBNV Viettel IDC` | `Người thân CBNV` | `So sánh song song`)**:
+  - Hiển thị chính xác sự khác biệt về thời gian chờ (Nhân viên miễn chờ bệnh đặc biệt/có sẵn & chờ tỷ lệ thai sản 270/60 ngày; Người thân mới chờ 365 ngày bệnh đặc biệt/có sẵn & chờ đủ 270/60 ngày thai sản).
+  - Bảng quyền lợi theo **3 Nhóm chức danh** (`Nhóm 1: TGĐ/Phó TGĐ`, `Nhóm 2: CBQL HRL13+`, `Nhóm 3: Cấp Nhân viên`), phân biệt rõ hạn mức tiền giường Nhóm 1 (`25.000.000 VNĐ/ngày` cho Nhân viên vs `15.000.000 VNĐ/ngày` cho Người thân) và trợ cấp nghỉ điều trị tai nạn.
+  - Tổng hợp **15 Quyền lợi Mở rộng đặc biệt** và **6 Điểm mới kỳ 2026 – 2027**.
+- **Trung tâm Tài liệu & Biểu mẫu thông minh (12 Files gốc)**:
+  - Tìm kiếm từ khóa tức thời, lọc theo đối tượng (`Nhân viên` / `Người thân` / `Dùng chung`) và nhóm chủ đề (`Sổ tay BHSK`, `Biểu mẫu bồi thường`, `Bảo lãnh & Blacklist`, `App Papaya Care`, `Quy tắc & Loại trừ PJICO`).
+  - Xem trực tiếp và tải về toàn bộ 12 tài liệu từ `/public/documents/`.
+- **AI Chatbot Tư vấn 24/7**:
+  - Đã nạp toàn bộ nội dung 12 tài liệu trong thư mục `Documents/` (Sổ tay NV, Sổ tay Người thân, 530 CSYT bảo lãnh, Blacklist PJICO cập nhật 12/08/2026, Quy tắc 383 & 384, Hướng dẫn App Papaya Care, Claim Form & Biên bản tai nạn).
+- **Google Sheet riêng cho Viettel IDC**:
+  - Spreadsheet ID: `1XXYWYc6hW6HOhQ0ZrBHlkEtjOS6xWxeXGJDCE9ld7z8`
+  - Link: https://docs.google.com/spreadsheets/d/1XXYWYc6hW6HOhQ0ZrBHlkEtjOS6xWxeXGJDCE9ld7z8/edit
+- **Trang Quản trị Backend**: `/admin` (Mật khẩu mặc định: `bolttech2027`).
